@@ -22,6 +22,11 @@ function HomePage() {
 
   const [selectedCoin, setSelectedCoin] = React.useState<string | null | undefined>(null);
   const [search, setSearch] = React.useState("");
+  const [ctrlButtonText, setCtrlButtonText] = React.useState("Ctrl");
+
+  React.useEffect(() => {
+    setCtrlButtonText(getOS() === "MacOS" ? "\u2318" : "Ctrl");
+  }, []);
 
   const focusSearchField = () => {
     const searchField = document.querySelector("input[name=search]") as HTMLInputElement;
@@ -40,7 +45,6 @@ function HomePage() {
   };
 
   const ctrlButton = getOS() === "MacOS" ? "META" : "CTRL";
-  const ctrlButtonText = getOS() === "MacOS" ? "\u2318" : "Ctrl";
 
   useShortcut([ctrlButton, "K"], focusSearchField);
   useShortcut([ctrlButton, "X"], refetchData);
