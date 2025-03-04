@@ -1,6 +1,6 @@
 # Project Documentation
 
-This documentation provides an overview of the project’s setup, API integration details, state management strategy, and the challenges encountered during development along with their solutions.
+This documentation provides an overview of the project’s setup and API integration details.
 
 ## Project Setup Guide
 
