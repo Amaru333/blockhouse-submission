@@ -24,8 +24,8 @@ The project is organized into separate folders for the web and mobile applicatio
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/your-username/repo.git
-   cd repo
+   git clone https://github.com/Amaru333/blockhouse-submission.git
+   cd blockhouse-submission
    ```
 
 2. **Install Dependencies**
